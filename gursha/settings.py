@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://gursha-f47f.onrender.com',]
+ALLOWED_HOSTS = ['gursha-f47f.onrender.com',]
 
 
 # Application definition
