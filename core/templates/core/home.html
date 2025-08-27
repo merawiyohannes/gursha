@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gursha / ጉርሻ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center space-x-3">
+      <img src="{% static 'images/gursha.png' %}" alt="Gursha Logo Small" class="w-10 h-10 rounded-full">
+      <h1 class="text-xl sm:text-2xl font-bold text-yellow-600">
+        Gursha <span class="text-gray-700">/ ጉርሻ</span>
+      </h1>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-100 py-12 sm:py-16">
+    <!-- Top Full Logo -->
+    <div class="w-full">
+      <img src="{% static 'images/gursha.png' %}" alt="Gursha Logo" class="w-full max-h-60 sm:max-h-72 object-contain mx-auto">
+    </div>
+
+    <!-- Notice after Logo -->
+    <div class="max-w-2xl mx-auto bg-white shadow rounded-xl p-4 sm:p-6 mt-6 text-center">
+      <p class="text-sm sm:text-base text-gray-700 leading-relaxed">
+        <strong>Notice:</strong> This page is only for 
+        <span class="text-yellow-700 font-semibold">updates and announcements</span> about Gursha.  
+        Foods will be posted here so you always know what’s fresh.  
+      </p>
+    </div>
+
+    <!-- About Gursha -->
+    <div class="max-w-5xl mx-auto px-4 text-center mt-10">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-yellow-700 mb-4">
+        No Stress Lunch — We Got You Covered
+      </h2>
+      <p class="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+        Gursha is a simple way to enjoy homemade meals at work.  
+        Staff will drop daily updates here—check anytime and pick your lunch with ease.
+      </p>
+    </div>
+  </section>
+
+    <!-- Chef Intro Section -->
+  <section class="max-w-5xl mx-auto px-4 mt-12 sm:mt-16">
+    <div class="bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col sm:flex-row items-center">
+      <!-- Chef Image -->
+      <div class="sm:w-1/2">
+        <img src="{% static 'images/arsema.jpg' %}" 
+             alt="Chef smiling and well-dressed" 
+             class="w-full h-72 object-cover">
+      </div>
+
+      <!-- Intro Text -->
+      <div class="sm:w-1/2 p-6 sm:p-8 text-center sm:text-left">
+        <h3 class="text-2xl sm:text-3xl font-bold text-yellow-700 mb-4">
+          Meet Our Chef Arsema
+        </h3>
+        <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+          Behind every Gursha meal is our passionate chef,  
+          preparing each dish with care, love, and a smile.  
+          She makes sure your lunch feels homemade, warm, and stress-free.
+        </p>
+      </div>
+    </div>
+    </section>
+
+
+  <!-- Menu Preview Section -->
+  <section class="max-w-5xl mx-auto px-4 mt-12 sm:mt-16">
+  <h3 class="text-xl sm:text-2xl font-bold text-yellow-700 mb-6 text-center">Today’s Meals</h3>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Meal Card -->
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/shiro.jpg' %}" alt="Shiro wot" class="w-full h-32 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ተጋቢኖ</h4>
+      <!-- Prices -->
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">120 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box): <span class="font-bold text-green-600">155 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/aynet.jpg' %}" alt="Fried Rice" class="w-full h-32 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">በየአይነት</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">140 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box): <span class="font-bold text-green-600">175 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/atkltpasta.jpg' %}" alt="Vegetable Pasta" class="w-full h-32 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ፓስታ በአትክልት</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box ): <span class="font-bold text-green-600">165 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/sgopasta.jpg' %}" alt="Pasta with Sugo" class="w-full h-32 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ፓስታ በስጎ</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box): <span class="font-bold text-green-600">165 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/firfir.jpg' %}" alt="Firfir" class="w-full h-32 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ፍርፍር</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box ): <span class="font-bold text-green-600">165 Birr</span></p>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- Notice Board -->
+  <section class="max-w-3xl mx-auto px-4 mt-12 sm:mt-16">
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-xl shadow-sm">
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-3">Notice Board</h3>
+      <ul class="space-y-3 text-sm sm:text-base text-gray-700">
+        <li class="border-b pb-2">⚡ Pilot service now open for bank staffs.</li>
+        <li class="border-b pb-2">📌 Order before 5:00 am — delivery at 6:30 am.</li>
+        <li>🎉 First come, first served. Fresh homemade food, no stress.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto px-4 mt-12 sm:mt-16 text-center">
+    <h3 class="text-xl sm:text-2xl font-bold text-yellow-700 mb-4">To Order, Call Us</h3>
+    <p class="text-sm sm:text-base text-gray-700 mb-6">Pick your meals from here or telegram, then call to place your order:</p>
+    <div class="bg-white shadow rounded-xl p-6 inline-block space-y-3 text-left">
+        <p class="text-sm sm:text-lg font-semibold text-gray-800">📞 <span class="text-yellow-600">+251-921-540245</span></p>
+        <p class="text-sm sm:text-lg font-semibold text-gray-800">📞 <span class="text-yellow-600">+251-960-633549</span></p>
+    </div>
+
+    <!-- Telegram CTA -->
+    <div class="mt-6">
+      <a href="https://t.me/gurshameal" target="_blank" 
+         class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-xl shadow">
+        💬 Join us on Telegram
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12 sm:mt-16">
+    <div class="max-w-5xl mx-auto px-4 py-6 text-center text-gray-500 text-xs sm:text-sm">
+      © 2025 Gursha / ጉርሻ. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
