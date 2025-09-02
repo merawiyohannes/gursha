@@ -72,6 +72,41 @@
     </section>
 
 
+      <!-- Packaging Options Section -->
+  <section class="max-w-4xl mx-auto px-4 mt-12 sm:mt-16">
+    <h3 class="text-xl sm:text-2xl font-bold text-yellow-700 mb-6 text-center">
+      The prices are based on Packaging Options
+    </h3>
+    <div class="grid sm:grid-cols-2 gap-6">
+      
+      <!-- Normal Plastic -->
+      <div class="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center">
+        <img src="{% static 'images/lastic.jpg' %}" 
+             alt="Normal Plastic Container" 
+             class="w-48 h-48 object-contain mb-4">
+        <h4 class="font-semibold text-gray-800 text-lg mb-2">Normal lastic</h4>
+        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+          Affordable option, light & practical.  
+          <span class="text-yellow-600 font-semibold">Included in base price.</span>
+        </p>
+      </div>
+
+      <!-- Delivery Box -->
+      <div class="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center">
+        <img src="{% static 'images/box.jpg' %}" 
+             alt="Delivery Box" 
+             class="w-48 h-48 object-contain mb-4">
+        <h4 class="font-semibold text-gray-800 text-lg mb-2">Delivery Box</h4>
+        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+          Stronger & keeps food secure.  
+          <span class="text-green-600 font-semibold">+10 Birr extra per meal.</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- Menu Preview Section -->
   <section class="max-w-5xl mx-auto px-4 mt-12 sm:mt-16">
   <h3 class="text-xl sm:text-2xl font-bold text-yellow-700 mb-6 text-center">Today’s Meals</h3>
@@ -79,39 +114,75 @@
 
     <!-- Meal Card -->
     <div class="bg-white shadow rounded-xl p-4 text-center">
-      <img src="{% static 'images/shiro.jpg' %}" alt="Shiro wot" class="w-full h-32 object-cover rounded-lg mb-3">
+      <img src="{% static 'images/tegabino.jpg' %}" alt="Shiro wot" class="w-full h-48 object-cover rounded-lg mb-3">
       <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ተጋቢኖ</h4>
       <!-- Prices -->
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">120 Birr</span></p>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box): <span class="font-bold text-green-600">155 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">170 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box): <span class="font-bold text-green-600">180 Birr</span></p>
     </div>
 
     <div class="bg-white shadow rounded-xl p-4 text-center">
-      <img src="{% static 'images/aynet.jpg' %}" alt="Fried Rice" class="w-full h-32 object-cover rounded-lg mb-3">
+      <img src="{% static 'images/aynet.jpg' %}" alt="Shiro wot" class="w-full h-48 object-cover rounded-lg mb-3">
       <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">በየአይነት</h4>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">140 Birr</span></p>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box): <span class="font-bold text-green-600">175 Birr</span></p>
+      <!-- Prices -->
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">160 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box): <span class="font-bold text-green-600">170 Birr</span></p>
     </div>
 
     <div class="bg-white shadow rounded-xl p-4 text-center">
-      <img src="{% static 'images/atkltpasta.jpg' %}" alt="Vegetable Pasta" class="w-full h-32 object-cover rounded-lg mb-3">
+      <img src="{% static 'images/shiro.jpg' %}" alt="Fried Rice" class="w-full h-48 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ሽሮ</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">150 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box): <span class="font-bold text-green-600">160 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/atkltpasta.jpg' %}" alt="Vegetable Pasta" class="w-full h-48 object-cover rounded-lg mb-3">
       <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ፓስታ በአትክልት</h4>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box ): <span class="font-bold text-green-600">165 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">150 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box ): <span class="font-bold text-green-600">160 Birr</span></p>
     </div>
 
     <div class="bg-white shadow rounded-xl p-4 text-center">
-      <img src="{% static 'images/sgopasta.jpg' %}" alt="Pasta with Sugo" class="w-full h-32 object-cover rounded-lg mb-3">
+      <img src="{% static 'images/sgo.jpg' %}" alt="Pasta with Sugo" class="w-full h-48 object-cover rounded-lg mb-3">
       <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ፓስታ በስጎ</h4>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box): <span class="font-bold text-green-600">165 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">150 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box): <span class="font-bold text-green-600">160 Birr</span></p>
     </div>
 
     <div class="bg-white shadow rounded-xl p-4 text-center">
-      <img src="{% static 'images/firfir.jpg' %}" alt="Firfir" class="w-full h-32 object-cover rounded-lg mb-3">
+      <img src="{% static 'images/firfir.jpg' %}" alt="Firfir" class="w-full h-48 object-cover rounded-lg mb-3">
       <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ፍርፍር</h4>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal Plastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
-      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Plastic Box ): <span class="font-bold text-green-600">165 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">150 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box ): <span class="font-bold text-green-600">160 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/msr.jpg' %}" alt="Firfir" class="w-full h-48 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ምስር ወጥ</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">150 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box ): <span class="font-bold text-green-600">160 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/dnch.jpg' %}" alt="Firfir" class="w-full h-48 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ድንች ወጥ</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">150 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box ): <span class="font-bold text-green-600">160 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/lebleb.jpg' %}" alt="Firfir" class="w-full h-48 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ቲማቲም ለብለብ</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box ): <span class="font-bold text-green-600">140 Birr</span></p>
+    </div>
+
+    <div class="bg-white shadow rounded-xl p-4 text-center">
+      <img src="{% static 'images/kurt.jpg' %}" alt="Firfir" class="w-full h-48 object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">ቲማቲም ቁርጥ</h4>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Normal lastic): <span class="font-bold text-yellow-600">130 Birr</span></p>
+      <p class="text-gray-700 text-sm sm:text-base mb-1">Price (Delivery Box ): <span class="font-bold text-green-600">140 Birr</span></p>
     </div>
 
   </div>

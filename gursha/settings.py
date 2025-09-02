@@ -23,11 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
+# SECRET_KEY = 'django-insecure-p86qz&&^h7d4cz6xc5l%yrac-^lwwu52kz=p+2inau_t8d^74w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['gursha-f47f.onrender.com',]
+ALLOWED_HOSTS = ['gursha-f47f.onrender.com']
 
 
 # Application definition
